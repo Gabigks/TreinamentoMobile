@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="C:\Users\User\Documents\Github\30js_html\script.js"></script>
+</head>
+<body>
+
+    <input/>
+    <button>Compare com o meu segredo</button>
+    <script>
+        var segredo = 5;
+        var input = document.querySelector("input");
+        input.focus();
+        function verifica() {
+            if(input.value == segredo) alert("Você ACERTOU!");
+            else alert("Você ERROU!!!!!!!!");
+            input.value = "";
+            input.focus();
+        }
+        var button = document.querySelector("button");
+        button.onclick = verifica; //Se passar só o nome da função sem (), você esta passando o codigo da função e nao chamando ela de fato
+    </script>
+
+</body>
+</html>
