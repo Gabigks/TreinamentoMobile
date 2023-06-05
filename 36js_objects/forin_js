@@ -1,0 +1,26 @@
+const cliente = {
+    nome: "Gabriel",
+    idade: 21,
+    cpf: "01010211943",
+    email: "gabrielgks10@gmail.com",
+    telefone: ["49988689061", "28197432984"], //array como atributo
+};
+
+cliente.enderecos = [
+    {
+        rua: "R. rotaract",
+        numero: 51,
+        apartamento: false,
+        complemento: "E",
+    },
+];
+
+for(let chave in cliente){
+    let tipo = typeof cliente[chave];
+    if(tipo !== "object" && tipo !== "function") {
+        console.log(`A chave ${chave} tem valor: ${cliente[chave]}`);
+    }else{
+        console.log(`A chave ${chave} tem valor:`);
+        console.log(cliente[chave]);
+    }
+}
