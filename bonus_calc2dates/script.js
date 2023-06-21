@@ -7,4 +7,5 @@ enviar.addEventListener("click", (event) => {
 
     var difference = date2 - date1;
     var dif = difference/(24*3600*1000);    
+    alert(`A diferença das datas é de ${dif} dias`);
 })
